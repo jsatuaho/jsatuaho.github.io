@@ -1,0 +1,18 @@
+<form *ngIf="showAddReservation" class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="service">Service</label>
+        <select name="serviceId" id="service">
+            <option value=""></option>
+            <option *ngFor="let service of services" value="{{ service.id }}">{{ service.name }}</option>
+        </select>
+    </div>
+    <div class="form-control">
+        <label for="datetime">Date and time</label>
+        <input type="text" name="datetime" [(ngModel)]="datetime" id="datetime" placeholder="Date and time of reservation">
+    </div>
+    <div class="form-control">
+        <label for="duration">Duration</label>
+        <input type="text" name="duration" [(ngModel)]="duration" id="duration" placeholder="For how long is the reservation">
+    </div>
+    <input type="submit" value="Save reservation" class="btn btn-block" />
+</form>

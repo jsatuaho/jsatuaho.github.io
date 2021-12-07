@@ -1,0 +1,69 @@
+{
+  "reservations": [
+    {
+      "id": "1",
+      "userId": "1",
+      "serviceId": "1",
+      "reservationDateTime": "12/12/20; 11:30",
+      "reservationDuration": "60 min"
+    },
+    {
+      "id": "2",
+      "userId": "2",
+      "serviceId": "3",
+      "reservationDateTime": "30/01/20; 12:00",
+      "reservationDuration": "10 min"
+    },
+    {
+      "id": "3",
+      "userId": "1",
+      "serviceId": "2",
+      "reservationDateTime": "04/04/22; 08:00",
+      "reservationDuration": "60 min"
+    },
+    {
+      "userId": "1",
+      "reservationDateTime": "12/12/22; 12:00",
+      "reservationDuration": "30min",
+      "id": "nNoL_UO"
+    }
+  ],
+  "services": [
+    {
+      "id": "1",
+      "name": "Hair dye"
+    },
+    {
+      "id": "2",
+      "name": "Eye checkup"
+    },
+    {
+      "id": "3",
+      "name": "Birthday"
+    },
+    {
+      "id": "4",
+      "name": "Dinner"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Jussi Sakari",
+      "email": "jsatuaho@hotmail.com",
+      "password": "parmalat"
+    },
+    {
+      "id": "2",
+      "name": "Sampo Tapio",
+      "email": "SampoTS@wurth.fi",
+      "password": "ErinPateSebu"
+    },
+    {
+      "id": "3",
+      "name": "Olli Ilmari",
+      "email": "pinkku.os@valmet.fi",
+      "password": "caipirinha"
+    }
+  ]
+}

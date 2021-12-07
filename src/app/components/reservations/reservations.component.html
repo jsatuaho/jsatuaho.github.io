@@ -1,0 +1,7 @@
+<app-add-reservation
+    (onAddReservation)="addReservation($event)"
+></app-add-reservation>
+<app-reservation-item
+    *ngFor="let reservation of reservations" [reservation]="reservation"
+    (onDeleteReservation)="deleteReservation(reservation)"
+></app-reservation-item>

@@ -1,0 +1,4 @@
+<div class="reservation">
+    <h3>{{ serviceName }} <fa-icon (click)="onDelete(reservation)" [ngStyle]="{'color':'red'}" [icon]="faTimes"></fa-icon></h3>
+    <p>{{ reservation.reservationDateTime }} - ({{reservation.reservationDuration }})</p>
+</div>
