@@ -23,9 +23,10 @@
     },
     {
       "userId": "1",
-      "reservationDateTime": "12/12/22; 12:00",
-      "reservationDuration": "30min",
-      "id": "nNoL_UO"
+      "serviceId": "4",
+      "reservationDateTime": "31/08/22; 19:00",
+      "reservationDuration": "180 min",
+      "id": "lcF-i1l"
     }
   ],
   "services": [

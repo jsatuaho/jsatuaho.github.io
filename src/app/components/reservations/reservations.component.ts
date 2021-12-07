@@ -25,6 +25,8 @@ export class ReservationsComponent implements OnInit {
   }
 
   addReservation(reservation: Reservation) {
-    this.reservationService.addReservation(reservation).subscribe((reservation) => (this.reservations.push(reservation)))
+    this.reservationService.addReservation(reservation).subscribe((reservation) => {
+      this.reservations.push(reservation)
+    })
   }
 }

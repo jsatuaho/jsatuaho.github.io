@@ -35,13 +35,13 @@ export class ReservationItemComponent implements OnInit {
     this.onDeleteReservation.emit(reservation)
   }
 
-  updateServiceName(reservation: Reservation) {
-    console.log("service pinged!")
+  addReservation(reservation: Reservation) {
     this.reservationService.addReservation(reservation).subscribe((reservation) => {
       for (let service of this.services) {
         if (service.id == reservation.serviceId) {
           this.serviceName = service.name
         }
+        console.log("service from reservation-item.component pinged!")
       }
     })
   }

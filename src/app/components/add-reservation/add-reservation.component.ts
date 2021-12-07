@@ -39,6 +39,8 @@ export class AddReservationComponent implements OnInit {
       reservationDuration: this.duration
     }
 
+    console.log(newReservation)
+
     this.onAddReservation.emit(newReservation)
 
     this.datetime = ""

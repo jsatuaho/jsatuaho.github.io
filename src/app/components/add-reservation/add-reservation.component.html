@@ -1,7 +1,7 @@
 <form *ngIf="showAddReservation" class="add-form" (ngSubmit)="onSubmit()">
     <div class="form-control">
-        <label for="service">Service</label>
-        <select name="serviceId" id="service">
+        <label for="serviceId">Service</label>
+        <select  [(ngModel)]="serviceId" name="serviceId" id="serviceId">
             <option value=""></option>
             <option *ngFor="let service of services" value="{{ service.id }}">{{ service.name }}</option>
         </select>
