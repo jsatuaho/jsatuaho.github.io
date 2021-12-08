@@ -4,6 +4,7 @@ import { Service } from 'src/app/Service';
 import { UiService } from 'src/app/services/ui.service';
 import { Subscription } from 'rxjs';
 import { ServicesService } from 'src/app/services/services.service';
+import { LocalstorageService } from '../../services/localstorage.service';
 
 @Component({
   selector: 'app-add-reservation',
@@ -14,6 +15,7 @@ export class AddReservationComponent implements OnInit {
   @Output() onAddReservation: EventEmitter<Reservation>= new EventEmitter()
   services: Service[] = []
   id!: string
+  userId: string = this.localStorageService.get("userId")
   serviceId!: string
   datetime!: string
   duration!: string
@@ -21,7 +23,7 @@ export class AddReservationComponent implements OnInit {
   subscription: Subscription
   
 
-  constructor(private uiService: UiService, private servicesService: ServicesService) {
+  constructor(private uiService: UiService, private servicesService: ServicesService, private localStorageService: LocalstorageService) {
     this.subscription = this.uiService.onToggle()
     .subscribe(value => (this.showAddReservation = value))
   }
@@ -33,13 +35,11 @@ export class AddReservationComponent implements OnInit {
   onSubmit() {
     const newReservation = {
       id: this.id,
-      userId: "1",
+      userId: this.userId,
       serviceId: this.serviceId,
       reservationDateTime: this.datetime,
       reservationDuration: this.duration
     }
-
-    console.log(newReservation)
 
     this.onAddReservation.emit(newReservation)
 

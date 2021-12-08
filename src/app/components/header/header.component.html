@@ -1,6 +1,6 @@
 <header>
     <h1>{{ title }} </h1>
-    <app-button
+    <app-button *ngIf="hasRoute('/home')"
     color="{{showAddReservation ? 'red': 'green'}}"
     text="{{showAddReservation ? 'Close': 'Add'}}"
     (btnClick)="toggleAddReservation()"></app-button>

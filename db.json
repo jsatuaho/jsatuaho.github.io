@@ -27,6 +27,13 @@
       "reservationDateTime": "31/08/22; 19:00",
       "reservationDuration": "180 min",
       "id": "lcF-i1l"
+    },
+    {
+      "userId": "3",
+      "serviceId": "3",
+      "reservationDateTime": "04/04/22; 19:00",
+      "reservationDuration": "360 min",
+      "id": "Zq_icth"
     }
   ],
   "services": [
@@ -50,19 +57,19 @@
   "users": [
     {
       "id": "1",
-      "name": "Jussi Sakari",
+      "name": "Jussi",
       "email": "jsatuaho@hotmail.com",
       "password": "parmalat"
     },
     {
       "id": "2",
-      "name": "Sampo Tapio",
+      "name": "Sampo",
       "email": "SampoTS@wurth.fi",
       "password": "ErinPateSebu"
     },
     {
       "id": "3",
-      "name": "Olli Ilmari",
+      "name": "Olli",
       "email": "pinkku.os@valmet.fi",
       "password": "caipirinha"
     }

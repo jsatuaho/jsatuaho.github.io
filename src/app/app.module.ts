@@ -11,9 +11,13 @@ import { ButtonComponent } from './components/button/button.component';
 import { ReservationsComponent } from './components/reservations/reservations.component';
 import { ReservationItemComponent } from './components/reservation-item/reservation-item.component';
 import { AddReservationComponent } from './components/add-reservation/add-reservation.component';
+import { LogInComponent } from './components/log-in/log-in.component';
+import { LogInItemComponent } from './components/log-in-item/log-in-item.component';
 
 const appRoutes: Routes = [
-  {path: '', component: ReservationsComponent}
+  {path: 'home', component: ReservationsComponent},
+  {path: 'login', component: LogInComponent},
+  {path: '',redirectTo: '/login', pathMatch: 'full'}
 ]
 
 @NgModule({
@@ -23,7 +27,9 @@ const appRoutes: Routes = [
     ButtonComponent,
     ReservationsComponent,
     ReservationItemComponent,
-    AddReservationComponent
+    AddReservationComponent,
+    LogInComponent,
+    LogInItemComponent
   ],
   imports: [
     BrowserModule,
