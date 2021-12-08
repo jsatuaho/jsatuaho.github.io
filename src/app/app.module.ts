@@ -13,6 +13,7 @@ import { ReservationItemComponent } from './components/reservation-item/reservat
 import { AddReservationComponent } from './components/add-reservation/add-reservation.component';
 import { LogInComponent } from './components/log-in/log-in.component';
 import { LogInItemComponent } from './components/log-in-item/log-in-item.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 const appRoutes: Routes = [
   {path: 'home', component: ReservationsComponent},
@@ -29,7 +30,8 @@ const appRoutes: Routes = [
     ReservationItemComponent,
     AddReservationComponent,
     LogInComponent,
-    LogInItemComponent
+    LogInItemComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
