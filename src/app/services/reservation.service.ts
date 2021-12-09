@@ -10,6 +10,11 @@ const httpOptions = {
   }),
 };
 
+/**
+ * 
+ *  Services to fetch, delete, and put reservations from the DB
+ */
+
 @Injectable({
   providedIn: 'root'
 })

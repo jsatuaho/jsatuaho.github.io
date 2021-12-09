@@ -1,27 +1,28 @@
 # Timely
+Project for YTSP0300 - Application Frameworks
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
+## What it does
+Allows user to add and remove reservations to a service. 
 
-## Development server
+## Video of app in use
+https://youtu.be/89UGSS-zzaE
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Link to app instance
+https://jsatuaho.github.io/timely-angular
 
-## Code scaffolding
+## App development history
+The app took somewhere around 32 hours to develop. I started with an outdated course, which I followed for a few hours. Afterwards I moved on to a more up-to-date crash course, and adapted that to my project.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Some setbacks I faced: forgetting to set values on load, forgetting to bind fields to variables, and flailing some with subscriptions and emitters. Pretty much all involved figuring out a minute detail that was either missing, or misplaced.
 
-## Build
+A valuable lesson in creating something with Angular is: create a mock-up, and design with care before implementation. This should lay out clearly the logic of the connections between the components, and save you headache in the future. Be mindful of your html element-variable bindings.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+With the amount left to do, I figure a 3 is a reasonable grade for this. I would grade it a 4 with 2 of the following implemented: webtoken authentication, reservation updating, new account registration, admin functions; a 5 with all.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## TODO
+- Implement possibility to update reservations
+- Implement sercure login with json webtoken
+- Implement new account registration
+- Create interface for admin users to add/remove services
+- Implement time tracking calendar, to show possible reservation conflicts

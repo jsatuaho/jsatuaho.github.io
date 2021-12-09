@@ -34,6 +34,13 @@
       "reservationDateTime": "04/04/22; 19:00",
       "reservationDuration": "360 min",
       "id": "Zq_icth"
+    },
+    {
+      "userId": "3",
+      "serviceId": "2",
+      "reservationDateTime": "20/12/21; 15:15",
+      "reservationDuration": "15 min",
+      "id": "sj1STvD"
     }
   ],
   "services": [

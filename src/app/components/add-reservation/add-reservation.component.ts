@@ -11,6 +11,14 @@ import { LocalstorageService } from '../../services/localstorage.service';
   templateUrl: './add-reservation.component.html',
   styleUrls: ['./add-reservation.component.css']
 })
+
+/***
+ * 
+ *  Component that passes the new reservation's info
+ *  Component visibility is toggled via button in header
+ *  Services array is used to populate the drop-down menu
+ * 
+ */
 export class AddReservationComponent implements OnInit {
   @Output() onAddReservation: EventEmitter<Reservation>= new EventEmitter()
   services: Service[] = []

@@ -1,5 +1,10 @@
 import { Injectable } from '@angular/core';
 
+/**
+ * 
+ *  Service to add, remove and clear local storage
+ */
+
 @Injectable({
   providedIn: 'root'
 })

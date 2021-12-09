@@ -2,6 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { LocalstorageService } from 'src/app/services/localstorage.service';
 import { Router } from '@angular/router';
 
+/**
+ * 
+ *  Footer component to hold logout button and implement logout logic
+ *  On logout, clears local storage and redirects to login page
+ * 
+ */
+
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',

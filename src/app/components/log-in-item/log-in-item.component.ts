@@ -1,5 +1,11 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 
+/**
+ * 
+ * Login form that sends the info down to parent component for processing
+ * 
+ */
+
 @Component({
   selector: 'app-log-in-item',
   templateUrl: './log-in-item.component.html',

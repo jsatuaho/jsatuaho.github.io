@@ -9,6 +9,11 @@ const httpOptions = {
   }),
 };
 
+/**
+ * 
+ *  Service to fetch list of reservable services
+ */
+
 @Injectable({
   providedIn: 'root'
 })

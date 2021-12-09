@@ -5,6 +5,14 @@ import { Reservation } from '../../Reservation';
 import { ServicesService } from 'src/app/services/services.service';
 import { Service } from 'src/app/Service';
 
+/**
+ * 
+ *  Component for each reservation displayed
+ *  Emits remove and add reservations events to be handled
+ *  by the reservations component
+ *  
+ */
+
 @Component({
   selector: 'app-reservation-item',
   templateUrl: './reservation-item.component.html',
@@ -41,7 +49,6 @@ export class ReservationItemComponent implements OnInit {
         if (service.id == reservation.serviceId) {
           this.serviceName = service.name
         }
-        console.log("service from reservation-item.component pinged!")
       }
     })
   }

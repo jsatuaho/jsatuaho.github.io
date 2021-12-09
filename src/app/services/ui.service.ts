@@ -1,6 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 
+/**
+ * 
+ *  Service to handle showing the add reservation UI
+ *    Is invisible when showAddReservation is false, visible when true
+ *    
+ */
+
 @Injectable({
   providedIn: 'root'
 })

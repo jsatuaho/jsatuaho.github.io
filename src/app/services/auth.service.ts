@@ -9,6 +9,12 @@ const httpOptions = {
   }),
 };
 
+/**
+ * 
+ *  Service to fetch user info from REST endpoint
+ * 
+ */
+
 @Injectable({
   providedIn: 'root'
 })
@@ -18,8 +24,8 @@ export class AuthService {
 
   constructor(private http: HttpClient) { }
 
-  getUser(loginUser: {userEmail: string, userPassword: string}): Observable<User[]> {
-    const url = `${this.apiUrl}?email=${loginUser.userEmail}`
+  getUser(userEmail: string): Observable<User[]> {
+    const url = `${this.apiUrl}?email=${userEmail}`
     console.log(url)
     return this.http.get<User[]>(url)
   }

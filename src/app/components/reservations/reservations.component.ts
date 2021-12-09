@@ -4,6 +4,12 @@ import { Reservation } from 'src/app/Reservation';
 import { LocalstorageService } from 'src/app/services/localstorage.service';
 import { Router } from '@angular/router';
 
+/**
+ * 
+ *  Container to display reservations and handle add/remove operations
+ *  When adding/removing reservations, updates the view
+ *  
+ */
 
 @Component({
   selector: 'app-reservations',
